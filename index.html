@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlog Video and Photos</title>
+    <style>
+        /* Menambahkan gradient background untuk halaman */
+        body {
+            background: linear-gradient(135deg, #ffcccc, #99ccff);
+            font-family: Arial, sans-serif;
+            color: #333;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1 {
+            background-color: deeppink;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+        }
+
+        /* Menambahkan gaya untuk tata letak foto */
+        .photo-gallery {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .photo-gallery img {
+            width: 200px; /* Mengatur lebar foto */
+            height: 200px; /* Mengatur tinggi foto */
+            border-radius: 8px; /* Menambahkan border-radius untuk tampilan yang lebih menarik */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Menambahkan animasi */
+        }
+
+        /* Efek hover pada gambar */
+        .photo-gallery img:hover {
+            transform: scale(1.1); /* Membesar sedikit saat di-hover */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+        }
+
+        /* Menambahkan gaya untuk teks agar berada di tengah */
+        .center-text {
+            text-align: center;
+            margin-top: 10px;
+            background-color: rgba(56, 170, 236, 0.795);
+            font-size: 30px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style: normal;
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        /* Menambahkan gaya agar video vlog berada di tengah dan animasi fade-in */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeIn 2s forwards; /* Menambahkan animasi fade-in */
+        }
+
+        /* Keyframes untuk animasi fade-in */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>BLOG & VLOG KELOMPOK 6</h1>
+    
+    <!-- Video Vlog -->
+    <div class="video-container">
+        <video width="640" height="360" controls>
+            <source src="vlog vidio.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <!-- Teks di tengah -->
+    <p class="center-text">HAPPY WATCHING GUYS!!!.</p>
+    
+    <!-- Galeri Foto -->
+    <div class="photo-gallery">
+        <img src="image/zahraa.jpeg" alt="Photo 1">
+        <img src="image/ainun.jpeg" alt="Photo 2">
+        <img src="image/angel.jpeg" alt="Photo 3">
+        <img src="image/ririn.jpeg" alt="Photo 4">
+    </div>
+</body>
+</html>
